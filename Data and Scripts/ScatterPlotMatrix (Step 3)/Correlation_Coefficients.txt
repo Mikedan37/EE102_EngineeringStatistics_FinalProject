@@ -1,0 +1,55 @@
+Correlation Coefficients
+=========================
+
+                            GlobalCompetitivenessIndex  GlobalInnovationIndex  HumanCapitalIndex  NaturalResourcesRents  WorldGovernance       GDP
+GlobalCompetitivenessIndex                    1.000000               0.764186           0.540679              -0.128816         0.595815  0.192206
+GlobalInnovationIndex                         0.764186               1.000000           0.836547              -0.304071         0.799905  0.181880
+HumanCapitalIndex                             0.540679               0.836547           1.000000              -0.373828         0.653651  0.234265
+NaturalResourcesRents                        -0.128816              -0.304071          -0.373828               1.000000        -0.255129 -0.133715
+WorldGovernance                               0.595815               0.799905           0.653651              -0.255129         1.000000  0.059764
+GDP                                           0.192206               0.181880           0.234265              -0.133715         0.059764  1.000000
+
+- Correlation coefficients range from -1 (strong negative) to 1 (strong positive).
+- Identify the strongest relationships for modeling.
+
+Key Observations from the Correlation Matrix :
+	1.	Correlation with GDP:
+	•	Human Capital Index (HCI): Correlation = 0.234. Among the variables, HCI has the highest positive correlation with GDP. While weak, it suggests a slight relationship between a country’s human capital and its GDP.
+	•	Global Competitiveness Index (GCI): Correlation = 0.192. GCI shows a weaker correlation with GDP, implying a minor relationship.
+	•	Global Innovation Index (GII): Correlation = 0.182. GII is weakly correlated with GDP.
+	•	World Governance Index (WGI): Correlation = 0.060. This variable has almost no correlation with GDP.
+	•	Natural Resources Rents (NRR): Correlation = -0.134. A small negative correlation suggests that higher reliance on natural resources might slightly suppress GDP growth.
+	2.	Relationships Among Input Variables:
+	•	GII and HCI: Correlation = 0.837. Strong positive correlation, indicating that countries with higher innovation also tend to have better human capital.
+	•	WGI and GII: Correlation = 0.800. Another strong positive correlation, showing that better governance is linked to higher innovation.
+	•	HCI and GCI: Correlation = 0.541. A moderate correlation indicates some relationship between competitiveness and human capital.
+	•	NRR and Other Variables: Generally negative correlations with all other variables, suggesting that countries relying on natural resources may underperform in these areas.
+
+Insights from the Scatter Plot Matrix
+	1.	HCI vs. GDP:
+	•	The scatter plot shows a weak positive trend, consistent with the correlation coefficient (0.234). However, the relationship is not very strong, and other factors likely influence GDP more significantly.
+	2.	NRR vs. GDP:
+	•	The scatter plot suggests a slight downward trend, reflecting the small negative correlation (-0.134). Countries with higher natural resource rents might have lower GDPs due to over-reliance on resources and limited diversification.
+	3.	WGI vs. GDP:
+	•	The scatter plot shows no clear pattern, matching the weak correlation coefficient (0.060). Governance alone does not appear to strongly affect GDP.
+	4.	GCI and GII vs. GDP:
+	•	The scatter plots for GCI and GII show some clustering but lack clear trends. Their correlations with GDP (0.192 and 0.182) are weak, confirming this observation.
+
+Key Takeaways for Modeling
+	1.	Most Relevant Input Variables:
+	•	Focus on Human Capital Index (HCI), as it has the highest positive correlation with GDP (0.234). While weak, it’s the most promising among the available variables.
+	•	Global Competitiveness Index (GCI) and Global Innovation Index (GII) could also be included due to their modest correlations with GDP (0.192 and 0.182, respectively).
+	2.	Exclude Less Relevant Variables:
+	•	World Governance Index (WGI) and Natural Resources Rents (NRR) have little to no meaningful correlation with GDP. Consider excluding them from the initial models unless they improve performance.
+	3.	Insights for Future Models:
+	•	The strong correlations among input variables (e.g., GII and HCI, GII and WGI) suggest potential multicollinearity. If these variables are included together in a model, regularization techniques (e.g., Ridge or Lasso regression) may be needed to handle redundancy.
+
+Recommendations
+	1.	Document Key Observations:
+	•	Include the scatter plot matrix and correlation coefficients in your report.
+	•	Highlight that HCI, GCI, and GII are the most relevant predictors for GDP based on the data.
+	2.	Build Initial Models:
+	•	Use HCI, GCI, and GII as predictors in linear or heuristic models.
+	•	Test excluding NRR and WGI to simplify the models.
+	3.	Explore Non-Linear Relationships:
+	•	The weak correlations suggest that linear models might not fully capture the relationships. Consider polynomial terms or interaction effects between HCI, GCI, and GII.
