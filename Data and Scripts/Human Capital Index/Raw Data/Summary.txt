@@ -1,0 +1,10 @@
+This text file is included to provide information for this folder.
+
+Included in this folder should be: 
+1) HumanCapital_data.csv (268 Countries)
+2) CleanData.py
+
+The CleanData.py script should:
+1) Sort the Data (Country, Important Metric)
+2) Output the Data to the Clean Data Folder of this Dataset
+
