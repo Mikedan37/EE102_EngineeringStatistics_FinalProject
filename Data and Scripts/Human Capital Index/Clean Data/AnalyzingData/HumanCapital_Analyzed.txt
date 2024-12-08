@@ -1,0 +1,10 @@
+
+Statistics Report for Global Competitiveness Index:
+----------------------------------------------------
+Mean: 0.5671656050955414
+Median: 0.562
+Mode: 0.369
+Minimum: 0.293
+Maximum: 0.884
+Variance: 0.022983639065817407
+Standard Deviation: 0.15160355888242666

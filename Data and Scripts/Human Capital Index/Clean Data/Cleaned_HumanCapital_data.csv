@@ -1,209 +1,158 @@
-Country,GDP
-Afghanistan,2101.422
-Albania,12291.902
-Algeria,11888.323
-Angola,7487.9253
-Antigua and Barbuda,21280.645
-Argentina,23189.527
-Armenia,11580.384
-Aruba,36504.688
-Australia,48107.066
-Austria,53345.742
-Azerbaijan,14232.192
-Bahamas,33484.535
-Bahrain,48486.305
-Bangladesh,4589.0938
-Barbados,16190.236
-Belarus,17883.19
-Belgium,49829.926
-Belize,9141.245
-Benin,2859.3916
-Bermuda,78149.35
-Bhutan,11196.7705
-Bolivia,8034.173
-Bosnia and Herzegovina,13000.695
-Botswana,14373.339
-Brazil,14402.494
-Brunei,59980.99
-Bulgaria,20732.58
-Burkina Faso,1916.7563
-Burundi,764.3366
-Cambodia,3761.9114
-Cameroon,3667.3228
-Canada,47460.37
-Cape Verde,6900.561
-Cayman Islands,68824.43
-Central African Republic,818.396
-Chad,1683.4781
-Chile,24599.375
-China,13399.138
-Colombia,14358.168
-Comoros,3185.6296
-Congo,4714.4385
-Costa Rica,19553.6
-Cote d'Ivoire,4620.349
-Croatia,26056.287
-Curacao,25196.512
-Cyprus,36509.355
-Czechia,37014.96
-Democratic Republic of Congo,1021.3272
-Denmark,54185.008
-Djibouti,4291.2974
-Dominica,12385.27
-Dominican Republic,15967.202
-East Asia and Pacific (WB),15617.488
-East Timor,3294.8655
-Ecuador,11587.825
-Egypt,10765.829
-El Salvador,8447.104
-Equatorial Guinea,21566.057
-Estonia,32008.934
-Eswatini,8113.2397
-Ethiopia,1864.4877
-Europe and Central Asia (WB),33155.633
-European Union (27),41485.742
-Fiji,12179.07
-Finland,46206.79
-France,43705.15
-Gabon,14783.078
-Gambia,1889.1381
-Georgia,12963.744
-Germany,51879.67
-Ghana,4662.011
-Greece,28239.92
-Grenada,14351.394
-Guatemala,8206.048
-Guinea,2217.1094
-Guinea-Bissau,1811.301
-Guyana,11819.142
-Haiti,3165.2957
-High-income countries,47504.21
-Honduras,5287.253
-Hong Kong,58098.406
-Hungary,28212.613
-Iceland,54665.766
-India,5789.678
-Indonesia,10519.295
-Iran,14968.595
-Iraq,10404.204
-Ireland,72293.21
-Israel,38570.87
-Italy,40837.74
-Jamaica,9906.04
-Japan,40727.97
-Jordan,9633.101
-Kazakhstan,24210.863
-Kenya,4244.8574
-Kiribati,1997.8575
-Kosovo,10031.048
-Kuwait,53476.12
-Kyrgyzstan,4912.3823
-Laos,6850.581
-Latin America and Caribbean (WB),15929.458
-Latvia,27509.336
-Lebanon,17227.504
-Lesotho,2687.4863
-Liberia,1525.458
-Libya,18554.48
-Lithuania,31925.803
-Low-income countries,1903.5065
-Lower-middle-income countries,6238.9507
-Luxembourg,116283.7
-Macao,113940.48
-Madagascar,1528.5618
-Malawi,1437.0421
-Malaysia,24859.797
-Maldives,18674.303
-Mali,2112.187
-Malta,40318.957
-Marshall Islands,4375.981
-Mauritania,5080.807
-Mauritius,21324.064
-Mexico,20423.559
-Micronesia (country),3446.1003
-Middle East and North Africa (WB),16354.35
-Middle-income countries,10426.732
-Moldova,10816.09
-Mongolia,11058.95
-Montenegro,18798.021
-Morocco,7632.1855
-Mozambique,1298.1354
-Myanmar,4433.664
-Namibia,10627.635
-Nauru,10223.102
-Nepal,3244.6743
-Netherlands,53847.83
-New Zealand,41628.4
-Nicaragua,5734.3677
-Niger,1143.8174
-Nigeria,5209.074
-North America (WB),57812.95
-North Macedonia,15553.534
-Norway,63547.688
-Oman,35229.953
-Pakistan,4746.718
-Palau,18364.799
-Palestine,6438.9336
-Panama,30481.771
-Papua New Guinea,3924.4238
-Paraguay,13163.74
-Peru,12321.318
-Philippines,7616.05
-Poland,28497.104
-Portugal,31847.537
-Puerto Rico,34539.586
-Qatar,97783.12
-Romania,24758.818
-Russia,25490.709
-Rwanda,1908.552
-Saint Kitts and Nevis,29310.443
-Saint Lucia,14810.646
-Saint Vincent and the Grenadines,13316.229
-Samoa,6214.8228
-San Marino,58432.504
-Sao Tome and Principe,3293.9004
-Saudi Arabia,48691.27
-Senegal,3118.0244
-Serbia,16182.934
-Seychelles,26923.008
-Sierra Leone,1573.5012
-Singapore,91270.64
-Sint Maarten (Dutch part),47269.09
-Slovakia,29327.516
-Slovenia,34853.043
-Solomon Islands,2609.79
-Somalia,1479.9875
-South Africa,13844.276
-South Asia (WB),5537.209
-South Korea,39814.66
-Spain,38497.484
-Sri Lanka,12770.843
-Sub-Saharan Africa (WB),3823.0452
-Sudan,4733.0176
-Suriname,17662.473
-Sweden,51334.434
-Switzerland,67907.39
-Tajikistan,3091.224
-Tanzania,2381.2224
-Thailand,16393.314
-Togo,1941.6276
-Tonga,6039.1587
-Trinidad and Tobago,27992.12
-Tunisia,10751.397
-Turkey,26568.02
-Turkmenistan,13086.014
-Turks and Caicos Islands,26931.729
-Tuvalu,4126.0093
-Uganda,2137.2073
-Ukraine,11536.316
-United Arab Emirates,71244.586
-United Kingdom,45162.996
-United States,58965.99
-Upper-middle-income countries,14995.433
-Uruguay,23041.506
-Uzbekistan,6663.9497
-Vanuatu,2921.8083
-Vietnam,8545.702
-World,15777.592
-Zambia,3384.268
-Zimbabwe,2286.6235
+Country,HCI
+Afghanistan,0.389
+Albania,0.621
+Algeria,0.523
+Angola,0.361
+Argentina,0.611
+Armenia,0.572
+Australia,0.803
+Austria,0.793
+Azerbaijan,0.597
+Bahrain,0.668
+Bangladesh,0.479
+Belgium,0.757
+Benin,0.406
+Bosnia and Herzegovina,0.618
+Botswana,0.424
+Brazil,0.56
+Bulgaria,0.676
+Burkina Faso,0.369
+Burundi,0.38
+Cambodia,0.493
+Cameroon,0.394
+Canada,0.799
+Chad,0.293
+Chile,0.674
+China,0.673
+Colombia,0.593
+Comoros,0.409
+Congo,0.42
+Costa Rica,0.619
+Cote d'Ivoire,0.353
+Croatia,0.723
+Cyprus,0.751
+Czechia,0.782
+Democratic Republic of Congo,0.369
+Denmark,0.774
+Dominican Republic,0.492
+East Timor,0.434
+Ecuador,0.602
+Egypt,0.486
+El Salvador,0.501
+Estonia,0.747
+Eswatini,0.409
+Ethiopia,0.385
+Finland,0.814
+France,0.765
+Gabon,0.453
+Gambia,0.397
+Georgia,0.614
+Germany,0.795
+Ghana,0.439
+Greece,0.681
+Guatemala,0.46
+Guinea,0.374
+Guyana,0.495
+Haiti,0.446
+Honduras,0.49
+Hong Kong,0.822
+Hungary,0.703
+Iceland,0.74
+India,0.44
+Indonesia,0.535
+Iran,0.591
+Iraq,0.398
+Ireland,0.806
+Israel,0.763
+Italy,0.769
+Jamaica,0.544
+Japan,0.844
+Jordan,0.562
+Kazakhstan,0.746
+Kenya,0.518
+Kiribati,0.479
+Kosovo,0.56
+Kuwait,0.576
+Kyrgyzstan,0.58
+Laos,0.452
+Latvia,0.724
+Lebanon,0.538
+Lesotho,0.371
+Liberia,0.319
+Lithuania,0.712
+Luxembourg,0.692
+Macao,0.759
+Madagascar,0.374
+Malawi,0.407
+Malaysia,0.622
+Mali,0.317
+Malta,0.701
+Mauritania,0.353
+Mauritius,0.626
+Mexico,0.607
+Moldova,0.58
+Mongolia,0.626
+Montenegro,0.615
+Morocco,0.5
+Mozambique,0.361
+Myanmar,0.473
+Namibia,0.435
+Nepal,0.49
+Netherlands,0.8
+New Zealand,0.767
+Nicaragua,0.531
+Niger,0.316
+Nigeria,0.342
+North Macedonia,0.534
+Norway,0.771
+Oman,0.622
+Pakistan,0.389
+Palestine,0.554
+Panama,0.532
+Papua New Guinea,0.384
+Paraguay,0.533
+Peru,0.586
+Philippines,0.548
+Poland,0.747
+Portugal,0.776
+Qatar,0.615
+Romania,0.601
+Russia,0.729
+Rwanda,0.374
+Saudi Arabia,0.585
+Senegal,0.418
+Serbia,0.755
+Seychelles,0.678
+Sierra Leone,0.351
+Singapore,0.884
+Slovakia,0.694
+Slovenia,0.788
+Solomon Islands,0.443
+South Africa,0.406
+South Korea,0.845
+South Sudan,0.302
+Spain,0.743
+Sri Lanka,0.584
+Sudan,0.379
+Sweden,0.8
+Switzerland,0.767
+Tajikistan,0.533
+Tanzania,0.4
+Thailand,0.604
+Togo,0.413
+Tonga,0.512
+Trinidad and Tobago,0.613
+Tunisia,0.508
+Turkey,0.626
+Tuvalu,0.554
+Uganda,0.382
+Ukraine,0.647
+United Arab Emirates,0.659
+United Kingdom,0.781
+United States,0.762
+Uruguay,0.6
+Vanuatu,0.471
+Vietnam,0.666
+Yemen,0.369
+Zambia,0.396
+Zimbabwe,0.441

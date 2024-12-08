@@ -6,13 +6,13 @@ file_path = '/Users/mdanylchuk/Desktop/EE102 Final Proj/Data and Scripts/Human C
 data = pd.read_csv(file_path)
 
 # Filter data for the year 2016
-filtered_data = data[(data['Year'] == 2016)][['Entity', 'GDP per capita, PPP (constant 2017 international $)']]
+filtered_data = data[(data['Year'] == 2017)][['Entity', 'Human capital index (HCI) (scale 0-1)']]
 
 # Remove rows where the country name is empty or GDP is 0 or NaN
 filtered_data = filtered_data[
     (filtered_data['Entity'].notna()) &
     (filtered_data['Entity'] != '') &
-    (filtered_data['GDP per capita, PPP (constant 2017 international $)'] > 0)
+    (filtered_data['Human capital index (HCI) (scale 0-1)'] > 0)
 ]
 
 # Remove duplicate countries if any
@@ -21,7 +21,7 @@ filtered_data = filtered_data.drop_duplicates(subset=['Entity'])
 # Rename columns to match the desired format
 formatted_data = filtered_data.rename(columns={
     'Entity': 'Country',
-    'GDP per capita, PPP (constant 2017 international $)': 'GDP'
+    'Human capital index (HCI) (scale 0-1)': 'HCI'
 })
 
 # Save the cleaned and formatted data to a new CSV file
