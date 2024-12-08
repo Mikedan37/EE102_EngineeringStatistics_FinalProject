@@ -26,7 +26,7 @@ def split_data(input_file, modeling_file, testing_file, test_size=0.1, random_st
     print(f"Testing data saved to: {testing_file}")
 
 # Example usage
-input_file = "/Users/mdanylchuk/Desktop/EE102 Final Proj/Data and Scripts/Global Competitiveness Index/Normalized Data/Normalized_GlobalCompetitiveness_data.csv"  # Replace with your actual file path
+input_file = "/Users/mdanylchuk/Desktop/EE102 Final Proj/Data and Scripts/Global Innovation Index/Normalized Data/Normalized_GlobalInnovation_data.csv"  # Replace with your actual file path
 modeling_file = "Modeling_Data.csv"
 testing_file = "Testing_Data.csv"
 

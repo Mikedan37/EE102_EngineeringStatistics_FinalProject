@@ -1,0 +1,75 @@
+N1 Model Evaluation Results
+=========================
+
+Model: GCI
+  Coefficients: [0.01687566]
+  Intercept: 0.019200235912278547
+  Mean Squared Error (MSE): 0.005900634696748141
+  R² (coefficient of determination): -0.1323894254686555
+
+Model: GII
+  Coefficients: [0.01582294]
+  Intercept: 0.019673167015119113
+  Mean Squared Error (MSE): 0.005819523922559907
+  R² (coefficient of determination): -0.11682347575261054
+
+Model: HCI
+  Coefficients: [0.016152]
+  Intercept: 0.021535306800049128
+  Mean Squared Error (MSE): 0.005861194390631458
+  R² (coefficient of determination): -0.12482044554037897
+
+Model Interpretations
+
+1. Model: GCI
+	•	Coefficients: 0.01687566
+	•	For every 1-unit increase in GCI (Global Competitiveness Index), the predicted GDP increases by 0.01688 units.
+	•	Intercept: 0.019200235912278547
+	•	If GCI is zero, the predicted GDP would be 0.0192 units.
+	•	MSE: 0.00590063469748141
+	•	The average squared difference between actual and predicted GDP is 0.0059.
+	•	R²: -0.1323894254686555
+	•	The negative R² indicates the model explains less variance than a simple mean-based prediction. In other words, the model is not effective in explaining the variability of GDP using GCI alone.
+
+2. Model: GII
+	•	Coefficients: 0.01582294
+	•	For every 1-unit increase in GII (Global Innovation Index), the predicted GDP increases by 0.01582 units.
+	•	Intercept: 0.019673167015119113
+	•	If GII is zero, the predicted GDP would be 0.01967 units.
+	•	MSE: 0.005819523922559907
+	•	The average squared difference between actual and predicted GDP is 0.0058.
+	•	R²: -0.11682347575261054
+	•	The negative R² indicates the model is performing poorly. It is worse than a simple mean-based prediction in explaining GDP variability using GII.
+
+3. Model: HCI
+	•	Coefficients: 0.016152
+	•	For every 1-unit increase in HCI (Human Capital Index), the predicted GDP increases by 0.01615 units.
+	•	Intercept: 0.021535306800049128
+	•	If HCI is zero, the predicted GDP would be 0.02154 units.
+	•	MSE: 0.005861194390631458
+	•	The average squared difference between actual and predicted GDP is 0.00586.
+	•	R²: -0.12482044554037897
+	•	Like the other models, the negative R² shows poor performance in explaining GDP variability compared to using the mean of GDP.
+
+Key Observations
+	1.	Low R² Values:
+	•	All three models (GCI, GII, HCI) have negative R² values, indicating that the models are not effective at explaining the variability in GDP.
+	•	Negative R² means the model predictions are worse than simply using the mean of the actual GDP values.
+	2.	Similar MSE Values:
+	•	The MSE values for all three models are similar (~0.0058), which suggests comparable performance in terms of prediction accuracy, but the models fail to explain variability.
+	3.	Coefficients and Relationships:
+	•	All coefficients are positive, indicating a direct (positive) relationship between each variable (GCI, GII, HCI) and GDP.
+	•	However, the magnitude of these coefficients is small, suggesting that these variables have a weak influence on GDP in this dataset.
+
+Implications
+	•	The models are not good predictors of GDP using the given input variables (GCI, GII, or HCI).
+	•	The negative R² values suggest that there may be other significant factors missing from the model that could better explain the variability in GDP.
+	•	Further analysis, such as including additional variables, improving data quality, or testing for nonlinear relationships, might improve the models.
+
+Next Steps
+	1.	Investigate Data Quality:
+	•	Check if there are outliers, missing data, or issues in how the variables were normalized or calculated.
+	2.	Add More Variables:
+	•	Combine multiple variables (e.g., GCI + GII, or all three variables) to see if a multi-variable model performs better.
+	3.	Test Nonlinear Models:
+	•	GDP may not have a linear relationship with these variables. Test other models like polynomial regression or decision trees.

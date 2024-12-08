@@ -1,0 +1,16 @@
+Models with one input variable:
+Model with input variables: ['GCI']
+  Coefficients: [0.01687566]
+  Intercept: 0.019200235912278547
+  Mean Squared Error on Test Data: 0.00590063463180809
+
+Model with input variables: ['GII']
+  Coefficients: [0.01582294]
+  Intercept: 0.019673167015119113
+  Mean Squared Error on Test Data: 0.005819523897092077
+
+Model with input variables: ['HCI']
+  Coefficients: [0.016152]
+  Intercept: 0.021535306800049128
+  Mean Squared Error on Test Data: 0.005861194501347942
+

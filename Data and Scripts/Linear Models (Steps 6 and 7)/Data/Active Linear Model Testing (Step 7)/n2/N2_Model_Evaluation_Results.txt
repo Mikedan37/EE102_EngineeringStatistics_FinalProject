@@ -1,0 +1,73 @@
+N2 Model Evaluation Results
+===========================
+
+Model: ('GCI', 'GII')
+  Coefficients: [0.01164111, 0.00899798]
+  Intercept: 0.016921753572956465
+  Mean Squared Error (MSE): 0.005866664238698383
+  R² (coefficient of determination): -0.1258701628044081
+
+Model: ('GCI', 'HCI')
+  Coefficients: [0.00829155, 0.01327677]
+  Intercept: 0.018031775608982614
+  Mean Squared Error (MSE): 0.00588368924323073
+  R² (coefficient of determination): -0.1291374274448731
+
+Model: ('GII', 'HCI')
+  Coefficients: [0.00471461, 0.0141875]
+  Intercept: 0.019654391773786146
+  Mean Squared Error (MSE): 0.00585032341337709
+  R² (coefficient of determination): -0.1227341988364199
+
+Model Interpretations
+
+1. Model: (‘GCI’, ‘GII’)
+	•	Coefficients: [0.01164111, 0.00899798]
+	•	For every 1-unit increase in GCI, GDP increases by 0.01164 units, assuming GII remains constant.
+	•	For every 1-unit increase in GII, GDP increases by 0.00899 units, assuming GCI remains constant.
+	•	Intercept: 0.016921753572956465
+	•	If both GCI and GII are zero, the predicted GDP is approximately 0.01692 units.
+	•	MSE: 0.005866664238698383
+	•	The average squared error between the actual and predicted GDP is 0.00587.
+	•	R²: -0.1258701628044081
+	•	The negative R² indicates that the model performs worse than a simple mean-based prediction. It does not effectively explain the variability in GDP.
+
+2. Model: (‘GCI’, ‘HCI’)
+	•	Coefficients: [0.00829155, 0.01327677]
+	•	For every 1-unit increase in GCI, GDP increases by 0.00829 units, assuming HCI remains constant.
+	•	For every 1-unit increase in HCI, GDP increases by 0.01328 units, assuming GCI remains constant.
+	•	Intercept: 0.018031775608982614
+	•	If both GCI and HCI are zero, the predicted GDP is approximately 0.01803 units.
+	•	MSE: 0.00588368924323073
+	•	The average squared error between the actual and predicted GDP is 0.00588.
+	•	R²: -0.1291374274448731
+	•	Similar to the first model, the negative R² shows that this model also performs poorly, with predictions worse than using the mean of GDP.
+
+3. Model: (‘GII’, ‘HCI’)
+	•	Coefficients: [0.00471461, 0.0141875]
+	•	For every 1-unit increase in GII, GDP increases by 0.00471 units, assuming HCI remains constant.
+	•	For every 1-unit increase in HCI, GDP increases by 0.01419 units, assuming GII remains constant.
+	•	Intercept: 0.019654391773786146
+	•	If both GII and HCI are zero, the predicted GDP is approximately 0.01965 units.
+	•	MSE: 0.00585032341337709
+	•	The average squared error between the actual and predicted GDP is 0.00585, which is the lowest among the three models.
+	•	R²: -0.1227341988364199
+	•	While still negative, this model performs slightly better than the other two based on the MSE and R² values.
+
+Key Observations
+	1.	Best Model for n=2:
+	•	The GII + HCI model performs slightly better than the other two models, with the lowest MSE (0.00585) and the least negative R² (-0.12273).
+	2.	Poor R² Values:
+	•	All three models have negative R² values, indicating that none of the two-variable combinations effectively explains the variability in GDP. Negative R² suggests the models are worse than simply predicting the mean of GDP.
+	3.	Coefficients:
+	•	The coefficients for all models are positive, indicating that all variables (GCI, GII, HCI) have a positive (direct) relationship with GDP.
+	4.	Room for Improvement:
+	•	The performance of the models might improve with additional variables, a more complex model (e.., non-linear regression), or better data preprocessing.
+
+Recommendations
+	1.	Move to n=3 Models:
+	•	Test the model with all three variables (GCI, GII, HCI) to see if combining all input variables reduces MSE and improves R².
+	2.	Consider Data Quality:
+	•	Investigate if the input data has noise or outliers, and consider scaling, normalizing, or transforming the variables.
+	3.	Explore Non-Linear Models:
+	•	If linear models fail to explain variability, try non-linear models (e.g., polynomial regression or machine learning techniques like decision trees).

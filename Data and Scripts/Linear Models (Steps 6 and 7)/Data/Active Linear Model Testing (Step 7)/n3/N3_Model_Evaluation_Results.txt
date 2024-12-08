@@ -1,0 +1,50 @@
+N3 Model Evaluation Results
+===========================
+
+Model with input variables: ['GCI', 'GII', 'HCI']
+  Coefficients: [0.0078746, 0.00103562, 0.01298983]
+  Intercept: 0.01779478867765881
+  Mean Squared Error (MSE): 0.005880103386903876
+  R² (coefficient of determination): -0.12844926659532652
+
+Key Components in the Results
+	1.	Model: The input variables used for the model: GCI, GII, and HCI.
+	2.	Coefficients: [0.0078746, 0.00103562, 0.01298983]
+	•	Indicates the impact of each variable on the output (GDP):
+	•	For every 1-unit increase in GCI (Global Competitiveness Index), the predicted GDP increases by 0.00787 units, assuming GII and HCI remain constant.
+	•	For every 1-unit increase in GII (Global Innovation Index), the predicted GDP increases by 0.00104 units, assuming GCI and HCI remain constant.
+	•	For every 1-unit increase in HCI (Human Capital Index), the predicted GDP increases by 0.01299 units, assuming GCI and GII remain constant.
+	3.	Intercept: 0.01779478867765881
+	•	Represents the predicted GDP value when all input variables (GCI, GII, HCI) are zero.
+	4.	Mean Squared Error (MSE): 0.005880103386903876
+	•	Measures the average squared difference between actual and predicted GDP values. A lower MSE indicates better model performance. However, this value is comparable to the MSEs from the n=2 models, suggesting limited improvement.
+	5.	R² (coefficient of determination): -0.12844926659532652
+	•	Indicates how well the model explains the variability in GDP. The negative value suggests that the model performs worse than simply predicting the mean of GDP, highlighting poor predictive performance.
+
+Observations
+	1.	Small Coefficients:
+	•	The coefficients are small, particularly for GII (0.00104), indicating a weak relationship between GII and GDP in this dataset.
+	•	The largest coefficient is for HCI (0.01299), suggesting that HCI has the most significant impact on GDP among the three input variables.
+	2.	Negative R²:
+	•	The R² value is negative, indicating that the model does not effectively explain the variability in GDP. It performs worse than simply predicting the average GDP for all samples.
+	3.	MSE:
+	•	The MSE (0.00588) is slightly better than the MSEs for the n=2 models, but the improvement is minimal.
+
+Implications
+	1.	Weak Predictive Power:
+	•	Despite including all three variables, the model’s R² value remains negative, suggesting that the input variables (GCI, GII, HCI) do not sufficiently explain GDP variability in this dataset.
+	2.	HCI’s Stronger Influence:
+	•	Among the three variables, HCI (Human Capital Index) consistently has the largest positive coefficient, indicating a stronger relationship with GDP.
+	3.	Limited Improvement:
+	•	Adding more variables (from n=1 to n=3) did not significantly reduce MSE or improve R², suggesting that these variables alone may not be adequate predictors of GDP.
+
+Recommendations
+	1.	Data Exploration:
+	•	Investigate the dataset for noise, outliers, or insufficient variability, which might explain the poor model performance.
+	•	Check correlations between the input variables and GDP to assess their predictive power.
+	2.	Additional Variables:
+	•	Consider incorporating additional variables that might have a stronger influence on GDP, such as trade balance, population, or industrial output.
+	3.	Nonlinear Models:
+	•	Explore nonlinear regression techniques or machine learning models (e.g., decision trees, random forests) to capture potential nonlinear relationships.
+	4.	Feature Engineering:
+	•	Create interaction terms or transform variables (e.g., log or square transformations) to enhance their predictive power.

@@ -1,0 +1,57 @@
+Heuristic Model Evaluation Results
+==================================
+
+Heuristic Model: f(GCI, GII, HCI) = a * GCI^2 + b * GII + c * HCI^2 + d * GCI * GII + e
+  Optimized Coefficients:
+    a: -0.000953710577931045
+    b: -0.00043324368493157656
+    c: 0.008886028136608203
+    d: -0.0003043811870424573
+    e: 0.05308882885591878
+
+  Mean Squared Error (MSE): 0.005210046438719207
+
+Key Components
+	1.	Model:
+
+f(\text{GCI}, \text{GII}, \text{HCI}) = a \cdot \text{GCI}^2 + b \cdot \text{GII} + c \cdot \text{HCI}^2 + d \cdot \text{GCI} \cdot \text{GII} + e
+
+	•	This is a non-linear model that includes quadratic terms (\text{GCI}^2, \text{HCI}^2), an interaction term (\text{GCI} \cdot \text{GII}), and a constant term (e).
+	2.	Optimized Coefficients:
+	•	a (GCI²): -0.000953710577931045
+	•	A small negative coefficient, indicating a slight inverse quadratic relationship between GCI and GDP.
+	•	b (GII): -0.0004332436849315756
+	•	A small negative coefficient, suggesting a weak inverse relationship between GII and GDP.
+	•	c (HCI²): 0.00886028136608203
+	•	The largest positive coefficient, indicating that HCI² has the most significant positive impact on GDP.
+	•	d (GCI × GII): -0.0003043811870424573
+	•	A small negative interaction effect between GCI and GII on GDP.
+	•	e (Intercept): 0.05308882885591878
+	•	The constant term, representing the baseline GDP when all input variables are zero.
+	3.	Mean Squared Error (MSE): 0.005210046438719207
+	•	This measures the average squared difference between the actual and predicted GDP values.
+	•	A lower MSE indicates better performance.
+
+Observations
+	1.	HCI² is the Most Influential Term:
+	•	The coefficient for HCI² (0.00886) is significantly larger than the coefficients for other terms, indicating that the quadratic effect of HCI (Human Capital Index) is the most important factor in predicting GDP in this model.
+	2.	Negative Coefficients for GCI and GII:
+	•	The negative coefficients for GCI², GII, and the interaction term (GCI \cdot GII) suggest that these variables have weak or slightly adverse effects on GDP in this dataset.
+	3.	Improved MSE:
+	•	The MSE of the heuristic model (0.00521) is lower than the MSEs for the linear models (n=1, n=2, and n=3 combinations), suggesting that the heuristic model provides better predictions than the linear models derived earlier.
+	4.	Complexity of the Model:
+	•	The inclusion of quadratic and interaction terms adds complexity to the model. However, the reduction in MSE justifies this added complexity.
+
+Interpretation
+	•	The heuristic model performs better than the linear models in terms of MSE, likely due to its ability to capture non-linear relationships and interactions between the input variables.
+	•	The strong positive effect of HCI² suggests that the quadratic effect of the Human Capital Index is crucial for predicting GDP, highlighting the importance of investing in human capital for economic growth.
+
+Recommendations
+	1.	Use the Heuristic Model:
+	•	Given the lower MSE, the heuristic model is a better predictor of GDP compared to the linear models.
+	2.	Explore Additional Terms:
+	•	You could experiment with higher-order terms (e.g., GII^2, HCI \cdot GII) or non-linear transformations (e.g., logarithmic or exponential terms) to further reduce the MSE.
+	3.	Validate on New Data:
+	•	Test the heuristic model on a new dataset to ensure its predictive power generalizes beyond the current data.
+	4.	Refine HCI’s Role:
+	•	Since HCI² has the most significant positive impact, consider exploring its individual contributions in greater detail to understand its role in GDP growth.
